@@ -1,14 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>KJ_87 - HP</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>自分のサイト — あなたの名前</title>
+  <meta name="description" content="シンプルできれいな自己紹介サイトのテンプレートです。">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <h1>KJ_87 HP</h1>
-    </div>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">Y</div>
+        <div>
+          <div style="font-weight:700">あなたの名前</div>
+          <div class="muted" style="font-size:13px">Web Developer / Designer</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#works">Works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="about">
+      <div class="left">
+        <h1>こんにちは、私はあなたの名前です👋</h1>
+        <p class="muted">ここは自己紹介や制作物をまとめるシンプルなページです。HTML/CSSだけで簡単にカスタマイズできます。</p>
+        <a class="cta" href="#contact">お問い合わせ</a>
+      </div>
+      <div style="width:220px;text-align:center">
+        <div class="profile-placeholder">プロフィール画像</div>
+      </div>
+    </section>
+
+    <section class="grid" id="works">
+      <article class="card">
+        <h3>制作物 1</h3>
+        <p class="muted">短い説明を書きます。どの技術を使ったか、URL、スクリーンショットなど。</p>
+      </article>
+
+      <article class="card">
+        <h3>制作物 2</h3>
+        <p class="muted">短い説明を書きます。プロジェクトの目的や成果を一行で。</p>
+      </article>
+
+      <article class="card">
+        <h3>制作物 3</h3>
+        <p class="muted">短い説明。Github リンクやデモへの導線を入れましょう。</p>
+      </article>
+    </section>
+
+    <section style="margin-top:22px" id="contact">
+      <div class="card">
+        <h3>お問い合わせ</h3>
+        <p class="muted">メール: <strong>your@email.example</strong></p>
+        <p class="muted">SNS: @yourhandle</p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> あなたの名前 — Built with HTML & CSS
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
